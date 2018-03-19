@@ -80,8 +80,7 @@ $xpath = '/students/student[@id=\'' . $id . '\']';
 echo 'Deleting a node using XPath: ' . $xpath . PHP_EOL;
 
 $nodes = $xml->xpath($xpath);
-unset($nodes[0]->{0});  // NOT WORK! WHY?
-
+unset($nodes[0]);
 
 
 // SAVE THE CHANGES
